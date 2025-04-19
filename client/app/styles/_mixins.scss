@@ -1,0 +1,26 @@
+@mixin font-params($fw, $fs, $lh, $ls) {
+  letter-spacing: $ls;
+
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+
+@mixin heading-medium-large {
+  @include font-params(500, 20px, 140%, 0px);
+}
+
+@mixin heading-medium-default {
+  @include font-params(500, 18px, 140%, 0px);
+}
+
+@mixin heading-medium-small {
+  @include font-params(500, 16px, 140%, 0px);
+}
+
+@mixin text-medium {
+  @include font-params(500, 14px, 140%, 0px);
+}
+@mixin text-small {
+  @include font-params(400, 14px, 160%, 0px);
+}

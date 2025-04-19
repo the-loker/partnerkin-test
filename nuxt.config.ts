@@ -27,6 +27,7 @@ export default defineNuxtConfig({
           additionalData: `
             @use "@/app/styles/_fonts.scss" as *;
             @use "@/app/styles/_variables.scss" as *;
+            @use "@/app/styles/_mixins.scss" as *;
           `,
         },
       },
