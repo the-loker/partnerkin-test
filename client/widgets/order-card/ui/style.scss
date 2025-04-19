@@ -1,2 +1,54 @@
 .order-card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 16px 20px 20px;
+
+  border-radius: 12px;
+  background-color: var(--color-primary-white);
+
+  gap: 8px;
+
+  &__header {
+    display: flex;
+
+    gap: 20px;
+
+    &-title {
+      flex: 1;
+
+      color: var(--color-primary-black);
+
+      @include heading-medium-large;
+    }
+
+    &-price {
+      opacity: 0.7;
+
+      @include heading-medium-large;
+      text-wrap-mode: nowrap;
+    }
+  }
+
+  &__info {
+    display: flex;
+
+    gap: 8px;
+
+    &-user {
+      color: var(--color-secondary-black);
+
+      @include text-medium;
+    }
+
+    &-date {
+      opacity: 0.5;
+
+      @include text-medium;
+    }
+  }
+
+  &__description {
+    @include text-small;
+  }
 }
