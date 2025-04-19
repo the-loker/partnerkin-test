@@ -24,13 +24,13 @@
 
     width: 100%;
     max-width: 1024px;
+    min-height: 100dvh;
     padding: $layout-padding;
 
     background-color: #f3f5f8;
 
     gap: 24px;
     grid-template-columns: $sidebar-width 1fr;
-    grid-template-rows: calc(100vh - $layout-padding * 2);
 
     @media (max-width: 1023px) {
       $sidebar-width: 216px;
