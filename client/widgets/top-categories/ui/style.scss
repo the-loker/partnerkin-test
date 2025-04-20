@@ -1,2 +1,51 @@
 .top-categories {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 16px 24px;
+
+  border-radius: 12px;
+  background-color: var(--bg-white);
+
+  gap: 20px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    &-icon {
+      display: flex;
+
+      color: #fc9803;
+
+      font-size: 20px;
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 120%;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    gap: 12px;
+
+    &-item {
+      opacity: 0.7;
+      color: var(--color-primary-black);
+
+      @include font-params(400, 14px, 120%, 0px);
+    }
+  }
 }
