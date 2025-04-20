@@ -9,6 +9,8 @@
     <template v-for="order in props.orders">
       <slot v-bind="order" />
     </template>
+
+    <slot name="pagination" />
   </section>
 </template>
 
