@@ -6,20 +6,31 @@ export default defineNuxtConfig({
   ssr: true,
   srcDir: 'client',
   serverDir: 'server',
+
   dir: {
     app: 'app/index',
     layouts: 'app/layouts',
   },
+
+  modules: [
+    [
+      '@pinia/nuxt',
+      { autoImports: ['defineStore', 'storeToRefs', 'acceptHMRUpdate'] },
+    ],
+  ],
+
   alias: {
     '@': resolve(__dirname, './client'),
     '@widgets': resolve(__dirname, './client/widgets'),
     '@entities': resolve(__dirname, './client/entities'),
     '@shared': resolve(__dirname, './client/shared'),
   },
+
   runtimeConfig: {
     API_URI: process.env.API_URI,
     API_KEY: process.env.API_KEY,
   },
+
   vite: {
     css: {
       preprocessorOptions: {
@@ -33,6 +44,7 @@ export default defineNuxtConfig({
       },
     },
   },
+
   css: ['~/app/styles/index.scss'],
   devtools: { enabled: !isProduction },
   compatibilityDate: '2024-11-01',
