@@ -42,6 +42,8 @@
 
     @media (max-width: 767px) {
       max-width: 360px;
+
+      grid-template-columns: 100%;
     }
 
     &__sidebar {
