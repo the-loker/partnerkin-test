@@ -1,4 +1,6 @@
 .banner {
+  position: relative;
+
   overflow: hidden;
 
   border-radius: 12px;
@@ -12,4 +14,28 @@
 
     background: linear-gradient(90deg, #4dff49 0%, #ffe500 100%);
   }
+}
+
+.banner-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+
+  color: var(--color-primary-black);
+  border: none;
+  border-radius: 50%;
+  background-color: var(--bg-white);
+
+  font-size: 13px;
 }

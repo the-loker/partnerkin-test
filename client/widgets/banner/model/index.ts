@@ -9,5 +9,9 @@ export const bannerProps = {
     type: String,
     required: true,
   },
+  closable: {
+    type: Boolean,
+    default: false,
+  },
 } as const;
 export type TBannerProps = ExtractPropTypes<typeof bannerProps>;
