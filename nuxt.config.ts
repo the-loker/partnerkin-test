@@ -10,6 +10,7 @@ export default defineNuxtConfig({
   dir: {
     app: 'app/index',
     layouts: 'app/layouts',
+    public: '../public',
   },
 
   modules: [
